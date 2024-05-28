@@ -136,6 +136,18 @@ static Tarea seleccionarTarea(List<Tarea> lista) {
     return tareaMover;
 }
 
+/// <summary>
+/// Filtra una tarea de una lista segun su descripcion
+/// </summary>
+/// <param name="lista">
+/// Lista de donde filtrar
+/// </param>
+/// <param name="descripcion">
+/// Descripcion que se desea filtrar
+/// </param>
+/// <return>
+/// Objeto tarea filtrado de la lista 'lista'
+/// </return>
 static Tarea filtrarTarea(List<Tarea> lista, string descripcion) {
     Tarea coincidencia = new Tarea();
 
