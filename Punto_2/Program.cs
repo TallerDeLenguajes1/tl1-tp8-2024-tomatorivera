@@ -41,58 +41,28 @@ do {
 
             switch (opcion) {
                 case 1:
-                    ultimaOperacion = new Operacion();
-                    ultimaOperacion.ResultadoAnterior = c.Resultado;
-
+                    agregarOperacion(historial, c.Resultado, termino, TipoOperacion.SUMA);
                     c.sumar(termino);
-
-                    ultimaOperacion.NuevoValor = termino;
-                    ultimaOperacion.tipoOperacion = TipoOperacion.SUMA;
-                    historial.Add(ultimaOperacion);
                     break;
                 case 2:
-                    ultimaOperacion = new Operacion();
-                    ultimaOperacion.ResultadoAnterior = c.Resultado;
-
+                    agregarOperacion(historial, c.Resultado, termino, TipoOperacion.RESTA);
                     c.restar(termino);
-
-                    ultimaOperacion.NuevoValor = termino;
-                    ultimaOperacion.tipoOperacion = TipoOperacion.RESTA;
-                    historial.Add(ultimaOperacion);
                     break;
                 case 3:
-                    ultimaOperacion = new Operacion();
-                    ultimaOperacion.ResultadoAnterior = c.Resultado;
-
+                    agregarOperacion(historial, c.Resultado, termino, TipoOperacion.MULTIPLICACION);
                     c.multiplicar(termino);
-
-                    ultimaOperacion.NuevoValor = termino;
-                    ultimaOperacion.tipoOperacion = TipoOperacion.MULTIPLICACION;
-                    historial.Add(ultimaOperacion);
                     break;
                 case 4:
                     if (termino == 0) Console.WriteLine("\n[!] No se puede dividir por cero");
                     else
                     {
-                        ultimaOperacion = new Operacion();
-                        ultimaOperacion.ResultadoAnterior = c.Resultado;
-
+                        agregarOperacion(historial, c.Resultado, termino, TipoOperacion.DIVISION);
                         c.dividir(termino);
-
-                        ultimaOperacion.NuevoValor = termino;
-                        ultimaOperacion.tipoOperacion = TipoOperacion.DIVISION;
-                        historial.Add(ultimaOperacion);
                     }             
                     break;
                 case 5:
-                    ultimaOperacion = new Operacion();
-                    ultimaOperacion.ResultadoAnterior = c.Resultado;
-
+                    agregarOperacion(historial, c.Resultado, termino, TipoOperacion.LIMPIAR);
                     c.limpiar();
-
-                    ultimaOperacion.NuevoValor = termino;
-                    ultimaOperacion.tipoOperacion = TipoOperacion.LIMPIAR;
-                    historial.Add(ultimaOperacion);
                     break;
                 case 6:
                     // Muestra el resultado luego del switch
@@ -116,3 +86,7 @@ do {
         }
     }
 } while (opcion != opcionSalir);
+
+static void agregarOperacion(List<Operacion> historial, double valorAnterior, double termino, TipoOperacion tipoOperacion) {
+    historial.Add(new Operacion(valorAnterior, termino, tipoOperacion));
+}
