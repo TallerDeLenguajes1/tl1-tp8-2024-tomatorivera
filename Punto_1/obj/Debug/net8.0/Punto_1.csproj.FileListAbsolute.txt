@@ -1,0 +1,14 @@
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\bin\Debug\net8.0\Punto_1.exe
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\bin\Debug\net8.0\Punto_1.deps.json
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\bin\Debug\net8.0\Punto_1.runtimeconfig.json
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\bin\Debug\net8.0\Punto_1.dll
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\bin\Debug\net8.0\Punto_1.pdb
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\Punto_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\Punto_1.AssemblyInfoInputs.cache
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\Punto_1.AssemblyInfo.cs
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\Punto_1.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\Punto_1.dll
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\refint\Punto_1.dll
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\Punto_1.pdb
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\Punto_1.genruntimeconfig.cache
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_1\obj\Debug\net8.0\ref\Punto_1.dll
