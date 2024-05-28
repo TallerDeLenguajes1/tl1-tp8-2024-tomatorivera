@@ -1,7 +1,9 @@
 ﻿using EspacioCalculadora;
 
+var historial = new List<Operacion>();
+
 Calculadora c = new Calculadora();
-int opcion = 0, opcionSalir = 7;
+int opcion = 0, opcionSalir = 8;
 
 do {
     Console.WriteLine("===== CALCULADORA =====");
@@ -11,7 +13,8 @@ do {
     Console.WriteLine("4. Dividir");
     Console.WriteLine("5. Limpiar resultado");
     Console.WriteLine("6. Mostrar resultado actual");
-    Console.WriteLine("7. Finalizar");
+    Console.WriteLine("7. Mostrar historial");
+    Console.WriteLine("8. Finalizar");
     Console.Write("> Seleccione una operacion: ");
 
     string strOpcion = Console.ReadLine();
@@ -34,28 +37,74 @@ do {
         if (!int.TryParse(strTermino, out termino)) {
             Console.WriteLine("\n[!] Debe ingresar un numero real\n");
         } else {
+            Operacion ultimaOperacion;
 
             switch (opcion) {
                 case 1:
+                    ultimaOperacion = new Operacion();
+                    ultimaOperacion.ResultadoAnterior = c.Resultado;
+
                     c.sumar(termino);
+
+                    ultimaOperacion.NuevoValor = termino;
+                    ultimaOperacion.tipoOperacion = TipoOperacion.SUMA;
+                    historial.Add(ultimaOperacion);
                     break;
                 case 2:
+                    ultimaOperacion = new Operacion();
+                    ultimaOperacion.ResultadoAnterior = c.Resultado;
+
                     c.restar(termino);
+
+                    ultimaOperacion.NuevoValor = termino;
+                    ultimaOperacion.tipoOperacion = TipoOperacion.RESTA;
+                    historial.Add(ultimaOperacion);
                     break;
                 case 3:
+                    ultimaOperacion = new Operacion();
+                    ultimaOperacion.ResultadoAnterior = c.Resultado;
+
                     c.multiplicar(termino);
+
+                    ultimaOperacion.NuevoValor = termino;
+                    ultimaOperacion.tipoOperacion = TipoOperacion.MULTIPLICACION;
+                    historial.Add(ultimaOperacion);
                     break;
                 case 4:
                     if (termino == 0) Console.WriteLine("\n[!] No se puede dividir por cero");
-                    else              c.dividir(termino);
+                    else
+                    {
+                        ultimaOperacion = new Operacion();
+                        ultimaOperacion.ResultadoAnterior = c.Resultado;
+
+                        c.dividir(termino);
+
+                        ultimaOperacion.NuevoValor = termino;
+                        ultimaOperacion.tipoOperacion = TipoOperacion.DIVISION;
+                        historial.Add(ultimaOperacion);
+                    }             
                     break;
                 case 5:
+                    ultimaOperacion = new Operacion();
+                    ultimaOperacion.ResultadoAnterior = c.Resultado;
+
                     c.limpiar();
+
+                    ultimaOperacion.NuevoValor = termino;
+                    ultimaOperacion.tipoOperacion = TipoOperacion.LIMPIAR;
+                    historial.Add(ultimaOperacion);
                     break;
                 case 6:
                     // Muestra el resultado luego del switch
                     break;
                 case 7:
+                    Console.WriteLine("\n*** Historial de tareas ***");
+                    foreach (Operacion op in historial)
+                    {
+                        Console.WriteLine($"\t{op}");
+                    }
+                    break;
+                case 8:
                     Console.WriteLine("\n*** EJECUCION FINALIZADA ***");
                     break;
                 default:

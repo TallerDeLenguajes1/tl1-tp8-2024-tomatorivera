@@ -1,0 +1,15 @@
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.AssemblyInfoInputs.cache
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.AssemblyInfo.cs
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.sourcelink.json
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\bin\Debug\net8.0\Punto_2.exe
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\bin\Debug\net8.0\Punto_2.deps.json
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\bin\Debug\net8.0\Punto_2.runtimeconfig.json
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\bin\Debug\net8.0\Punto_2.dll
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\bin\Debug\net8.0\Punto_2.pdb
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.dll
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\refint\Punto_2.dll
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.pdb
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\Punto_2.genruntimeconfig.cache
+C:\Users\Alumno\Documents\tp8\tl1-tp8-2024-tomatorivera\Punto_2\obj\Debug\net8.0\ref\Punto_2.dll
